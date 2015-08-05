@@ -1,0 +1,1 @@
+tamagachi app
