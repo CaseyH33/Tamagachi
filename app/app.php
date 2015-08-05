@@ -20,9 +20,9 @@
     });
 
     $app->post("/tamagachi", function() use ($app) {
-      $tamagachi = new Tamagachi($_POST['name']);
+      $tamagachi = new Tamagachi($_POST['tamagachi_name']);
       $tamagachi->save();
-      return $app['twig']->render('tamagachis.html.twig', array('new_tamagachi' => $tamagachi));
+      return $app['twig']->render('tamagachis.html.twig', array('tamagachis' => Tamagachi::getAll()));
     });
 
     return $app;

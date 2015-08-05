@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Tamagachi Land</title>
+
+</head>
+
+<body>
+<h1>Tamagachi Village</h1>
+  {% if tamagchis is not empty %}
+  <ul>
+    {% for tamagachi in tamagachis %}
+<li>{{ tamagachi.getName }}</li>
+    <ul>
+        <li>Food: {{tamagachi.getFood}}</li>
+        <li>Rest: {{tamagachi.getRest}}</li>
+        <li>Attention: {{tamagachi.getAttention}}</li>
+    </ul>
+    {% endfor %}
+  </ul>
+    {% endif %}
+
+</body>
+</html>

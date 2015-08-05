@@ -62,6 +62,8 @@
 
     static function getAll()
     {
-      return $_SESSION['list_of_places'];
+      return $_SESSION['list_of_tamagachis'];
     }
   }
+
+?>
